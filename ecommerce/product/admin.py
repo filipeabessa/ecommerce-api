@@ -1,3 +1,4 @@
+from ecommerce.product.models import Product
 from django.contrib import admin
 
 class ProductAdmin(admin.ModelAdmin):
@@ -9,3 +10,5 @@ class ProductAdmin(admin.ModelAdmin):
     def save_model(self, request, obj):
         obj.responsible = request.user
         obj.save()
+
+admin.site.register(Product, ProductAdmin)
