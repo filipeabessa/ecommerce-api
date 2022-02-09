@@ -1,3 +1,9 @@
 Django==3.2.0
-psycopg2-binary==2.9.3
 djangorestframework==3.13.1
+
+# database
+psycopg2-binary==2.9.3
+
+# authentication
+django-oauth-toolkit==1.7.0
+django-cors-headers==3.11.0
