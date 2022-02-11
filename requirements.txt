@@ -7,3 +7,8 @@ psycopg2-binary==2.9.3
 # authentication
 django-oauth-toolkit==1.7.0
 django-cors-headers==3.11.0
+
+# docs
+drf-yasg==1.20.0
+
+

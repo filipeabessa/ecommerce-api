@@ -41,13 +41,16 @@ INSTALLED_APPS = [
     # 3rd party apps
     'rest_framework',
     'oauth2_provider',
-    'corsheaders',
+    'corsheaders', 
+    'drf_yasg',
+
     
     # internal apps
     'ecommerce.product.apps.ProductConfig'
 ]
 
 REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
     'DEFAULT_PERMISSION_CLASSES': [
     'rest_framework.permissions.AllowAny',
     ],

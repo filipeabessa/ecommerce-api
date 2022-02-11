@@ -1,3 +1,8 @@
 {
-  "conventionalCommits.scopes": ["project_setup", "product", "git"]
+  "conventionalCommits.scopes": [
+    "project_setup",
+    "product",
+    "git",
+    "documentation"
+  ]
 }
