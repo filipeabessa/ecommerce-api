@@ -3,6 +3,7 @@
     "project_setup",
     "product",
     "git",
-    "documentation"
+    "documentation",
+    "authentication"
   ]
 }

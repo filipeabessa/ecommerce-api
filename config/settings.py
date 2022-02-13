@@ -46,13 +46,16 @@ INSTALLED_APPS = [
 
     
     # internal apps
-    'ecommerce.product.apps.ProductConfig'
+    'ecommerce.product',
 ]
 
 REST_FRAMEWORK = {
     'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'oauth2_provider.contrib.rest_framework.OAuth2Authentication',
+    ),
     'DEFAULT_PERMISSION_CLASSES': [
-    'rest_framework.permissions.AllowAny',
+    'rest_framework.permissions.IsAuthenticated',
     ],
 }
 
@@ -71,6 +74,13 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 ROOT_URLCONF = 'config.urls'
+
+
+OAUTH2_PROVIDER = {
+    # this is the list of available scopes
+    'SCOPES': {'read': 'Read scope', 'write': 'Write scope', 'groups': 'Access to your groups'},
+}
+
 
 TEMPLATES = [
     {

@@ -7,8 +7,5 @@ class ProductAdmin(admin.ModelAdmin):
     ordering = ('-creation',)
     readonly_fields = ('creation',)
     
-    def save_model(self, request, obj):
-        obj.responsible = request.user
-        obj.save()
 
 admin.site.register(Product, ProductAdmin)
