@@ -4,6 +4,7 @@
     "product",
     "git",
     "documentation",
-    "authentication"
+    "authentication",
+    "deploy"
   ]
 }

@@ -75,6 +75,9 @@ CORS_ALLOWED_ORIGINS = [
 
 ROOT_URLCONF = 'config.urls'
 
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'https://fbessa-products-management-api.herokuapp.com/']
+
+
 
 OAUTH2_PROVIDER = {
     # this is the list of available scopes
