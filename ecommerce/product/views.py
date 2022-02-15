@@ -22,4 +22,3 @@ class ProductViewSet(viewsets.ModelViewSet):
             queryset = queryset.filter(price=Decimal(price))
         
         return queryset
-    
