@@ -1,7 +1,7 @@
 
 import environ
 
-from tutorialdjango.settings.base import *
+from config.settings.base import *
 
 env = environ.Env()
 
